@@ -12,7 +12,7 @@ const App = () => {
   const [preData,setPreData] = useState([]);
 
   const onSearch = (value, _e) => {
-    const newData = _.filter(preData,(i)=>{ //i是preData中的每个元素 
+    const newData = _.filter(preData,(i)=>{ 
       return i.name.includes(value) || i.email.includes(value) || i.phone.includes(value)
     })
     setData(newData)
